@@ -9,7 +9,8 @@ import Foundation
 
 @Observable
 class SearchViewModel {
-    var movies: [MovieModel] = []
+    
+    private(set) var movies: [MovieModel] = []
     
     private let networkService: NetworkService
     
