@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    @State private var search: String = ""
+    
     var body: some View {
-        Text("Discover")
+        NavigationStack {
+            VStack {
+                SearchBar(searchText: $search)
+                
+                List {
+                    Section {
+//                        MovieItem()
+                    }
+                    .padding(.vertical, 8)
+                    .listRowInsets(.init())
+                }
+                .listStyle(.plain)
+            }
+            .navigationTitle("Discover")
+        }
     }
 }
 

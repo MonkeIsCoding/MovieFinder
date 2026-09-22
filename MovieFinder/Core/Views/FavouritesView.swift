@@ -46,7 +46,7 @@ struct FavouritesView: View {
                 }
                 .listStyle(.plain)
             }
-            .navigationTitle("Discover")
+            .navigationTitle("Favourites")
         }
     }
     
